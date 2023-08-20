@@ -67,7 +67,7 @@ export default {
         };
 
         axios
-          .post("shipmnts-practice-test.eu-north-1.elasticbeanstalk.com/api/signin", userData)
+          .post("http://16.171.250.250/api/signin", userData)
           .then((response) => {
             localStorage.setItem("access_token", response.data.access_token);
 

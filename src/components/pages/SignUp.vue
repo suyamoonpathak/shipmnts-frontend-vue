@@ -103,7 +103,7 @@ export default {
 
         // Make an API call to the backend to register the user
         axios
-          .post("shipmnts-practice-test.eu-north-1.elasticbeanstalk.com/api/signup", userData)
+          .post("http://16.171.250.250/api/signup", userData)
           .then((response) => {
             // Handle the response (e.g., show success message, redirect to login)
             localStorage.setItem("access_token", response.data.access_token);
